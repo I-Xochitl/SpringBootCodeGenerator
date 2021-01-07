@@ -58,8 +58,7 @@
     "name": "mybatis",
     "group": "mybatis",
     "description": "mybatis"
-  },
-  {
+  }, {
     "id": "25",
     "name": "model",
     "group": "mybatis",
@@ -125,6 +124,14 @@
     "group": "mybatis-plus",
     "description": "pluscontroller"
   },
+
+  {
+    "id": "100",
+    "name": "plusservice",
+    "group": "mybatis-plus",
+    "description": "mybatis-plus service"
+  },
+
   {
     "id": "61",
     "name": "plusmapper",

@@ -1,11 +1,15 @@
 package ${packageName}.entity;
 
 import lombok.Data;
+import lombok.ToString;
+import lombok.experimental.Accessors;
 import java.util.Date;
 import java.util.List;
 import java.io.Serializable;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableName;
 
 /**
  * @description ${classInfo.classComment}
@@ -14,6 +18,9 @@ import com.baomidou.mybatisplus.annotation.TableId;
  */
 @Data<#if swagger?exists && swagger==true>
 @ApiModel("${classInfo.classComment}")</#if>
+@Accessors(chain = true)
+@ToString
+@TableName("${classInfo.tableName}")
 public class ${classInfo.className} implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -25,6 +32,7 @@ public class ${classInfo.className} implements Serializable {
     * ${fieldItem.fieldComment}
     */<#if swagger?exists && swagger==true>
     @ApiModelProperty("${fieldItem.fieldComment}")</#if>
+    @TableField("${fieldItem.columnName}")
     private ${fieldItem.fieldClass} ${fieldItem.fieldName};
 
 </#list>
