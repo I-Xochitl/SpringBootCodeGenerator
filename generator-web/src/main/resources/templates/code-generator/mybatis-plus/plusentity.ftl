@@ -36,6 +36,11 @@ public class ${classInfo.className} implements Serializable {
     private ${fieldItem.fieldClass} ${fieldItem.fieldName};
 
 </#list>
+
+<#list classInfo.fieldList as fieldItem >
+    public static final String column_he_${fieldItem.columnName} = "${fieldItem.columnName}";
+</#list>
+
     public ${classInfo.className}() {
     }
 </#if>
