@@ -18,6 +18,8 @@
 
     <link href="//cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="images/x-icon" href="http://bk.img.langhe.vip/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190427193510-1ff9264b108349fca099dce1bd1efd6e_1585194895356.jpg">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
